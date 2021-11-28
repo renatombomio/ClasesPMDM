@@ -43,7 +43,7 @@ public class ListasActivity extends AppCompatActivity implements View.OnClickLis
             }
         });
 
-        listviewSpinner.add(new Categoria("Romario", "FC. Barcelona", R.drawable.romario,"Fútbol"));
+        /*listviewSpinner.add(new Categoria("Romario", "FC. Barcelona", R.drawable.romario,"Fútbol"));
         listviewSpinner.add(new Categoria("Ronaldo", "Brasil", R.drawable.ronaldo,"Fútbol"));
         listviewSpinner.add(new Categoria("Maradona", "Argentina", R.drawable.maradona,"Fútbol"));
         listviewSpinner.add(new Categoria("Zidane", "Francia", R.drawable.zidane,"Fútbol"));
@@ -55,13 +55,13 @@ public class ListasActivity extends AppCompatActivity implements View.OnClickLis
         listviewSpinner.add(new Categoria("Juego de tronos", "Histórica", R.drawable.tronos,"Series"));
         listviewSpinner.add(new Categoria("Lost", "Fantastica", R.drawable.lost,"series"));
         listviewSpinner.add(new Categoria("La casa de papel", "Accion", R.drawable.papel,"Series"));
-        acciones();
+        acciones();*/
     }
 
     private void iniciarElementos() {
 
-        //spinnerCoches.setAdapter(adaptadorSpinner);
-        listviewSpinner.setAdapter();
+
+        //listviewSpinner.setAdapter();
     }
 
     private void acciones() {

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Aleatorios</string>
+    <string name="IB"> Descripcion </string>
+    <string name="BtnCambiarDados"> DadosLocos </string>
 </resources>

@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.22554347826086957" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14387031408308004" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.22916666666666666" />
+        <entry key="app/src/main/res/layout/item_spinner.xml" value="0.20742753623188406" />
       </map>
     </option>
   </component>

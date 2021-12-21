@@ -1,19 +1,19 @@
-package com.example.dialogo;
+package com.example.proyectodialogos;
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.Toast;
-
-import com.example.dialogo.dialog.DialogoConfirmacion;
-import com.example.dialogo.dialog.DialogoInformacion;
-import com.example.dialogo.dialog.DialogoListas;
-import com.example.dialogo.dialog.DialogoPersonalizado;
-import com.example.dialogo.utils.Persona;
+import com.example.dialogo.R;
+import com.example.proyectodialogos.dialog.DialogoConfirmacion;
+import com.example.proyectodialogos.dialog.DialogoInformacion;
+import com.example.proyectodialogos.dialog.DialogoListas;
+import com.example.proyectodialogos.dialog.DialogoPersonalizado;
+import com.example.proyectodialogos.utils.Persona;
 
 public class MainActivity extends AppCompatActivity implements DialogoPersonalizado.OnDialogoPersoListener {
 

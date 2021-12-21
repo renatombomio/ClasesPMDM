@@ -1,4 +1,4 @@
-package com.example.dialogo.utils;
+package com.example.proyectodialogos.utils;
 
 public class Persona {
 

@@ -3,11 +3,11 @@ package com.example.listas.utils;
 public class Marca {
 
     private String nombre;
-    private int Imagen;
+    private int imagen;
 
     public Marca(String nombre, int imagen) {
         this.nombre = nombre;
-        Imagen = imagen;
+        this.imagen = imagen;
     }
 
     public String getNombre() {
@@ -19,13 +19,15 @@ public class Marca {
     }
 
     public int getImagen() {
-        return Imagen;
+        return imagen;
     }
 
     public void setImagen(int imagen) {
-        Imagen = imagen;
+        this.imagen = imagen;
     }
 
     @Override
-    public String toString(){return nombre;}
+    public String toString() {
+        return nombre;
+    }
 }

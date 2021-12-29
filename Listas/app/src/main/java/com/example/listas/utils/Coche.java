@@ -1,7 +1,6 @@
 package com.example.listas.utils;
 
 public class Coche {
-
     private String modelo, marca;
     private int imagen, cv;
 

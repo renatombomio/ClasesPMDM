@@ -48,7 +48,7 @@ public class AdaptadorSpinner extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        convertView = LayoutInflater.from(context).inflate(R.layout.reservas, parent, false);
+        convertView = LayoutInflater.from(context).inflate(R.layout.activity_main, parent, false);
 
         ImageView imagenS = convertView.findViewById(R.id.imagen_fila_salida_spinner);
         ImageView imagenR = convertView.findViewById(R.id.imagen_fila_regreso_spinner);

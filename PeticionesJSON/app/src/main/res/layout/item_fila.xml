@@ -2,7 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:id="@+id/fila_item"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,7 +13,7 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/escudo_equipo"
+        android:id="@+id/imagen_item"
        />
 
         <LinearLayout
@@ -22,14 +25,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:gravity="center"
-                android:id="@+id/nombre_equipo"
+                android:id="@+id/nombre_item"
+                android:text="nombre"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:gravity="center"
-                android:id="@+id/estadio_equipo"
+                android:id="@+id/estadio_item"
+                android:text="estadio"
                 />
 
 

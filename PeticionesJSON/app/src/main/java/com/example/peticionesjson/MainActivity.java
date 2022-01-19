@@ -13,7 +13,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.peticionesjson.fragments.FragmentDetalle;
 import com.example.peticionesjson.fragments.FragmentLista;
+import com.example.peticionesjson.utils.Equipo;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -68,4 +70,14 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public void onEquipoSelected (Equipo equipo){
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.sitio_fragments, new FragmentDetalle());
+        fragmentTransaction.addToBackStack("fdetalle");
+        fragmentTransaction.commit();
+    }
+
 }

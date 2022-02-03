@@ -5,23 +5,23 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="1"
     tools:context=".MainActivity">
 
     <FrameLayout
         android:layout_width="0dp"
         android:layout_weight="0.3"
         android:layout_height="match_parent"
-        android:id="@+id/sitio_detail"
-        android:background="@color/purple_500"
+        android:background="@android:color/holo_purple"
+        android:id="@+id/sitio_master"
         />
 
     <FrameLayout
         android:layout_width="0dp"
         android:layout_weight="0.7"
         android:layout_height="match_parent"
-        android:id="@+id/sitio_master"
-        android:background="@color/purple_200"
+        android:background="@android:color/holo_blue_dark"
+        android:id="@+id/sitio_detail"
         />
-
 
 </LinearLayout>

@@ -19,55 +19,54 @@ import java.util.ArrayList;
 
 public class AdaptadorEquipos extends RecyclerView.Adapter<AdaptadorEquipos.MyHolder> {
 
-    private ArrayList<Equipo> listaEquipo;
+    private ArrayList<Equipo> listaEquipos;
     private Context context;
     private OnEquipoListener listener;
 
-    public AdaptadorEquipos (Context context) {
-        this.listaEquipo = new ArrayList<>();
+    public AdaptadorEquipos(Context context) {
+        this.listaEquipos = new ArrayList<>();
         this.context = context;
         this.listener = (OnEquipoListener) context;
     }
 
 
+
     public void agregarEquipo (Equipo equipo){
-        this.listaEquipo.add(equipo);
+        this.listaEquipos.add(equipo);
         this.notifyDataSetChanged();
     }
-
 
     @NonNull
     @Override
     public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-    View view = LayoutInflater.from(context).inflate(R.layout.item_fila, parent, false);
-    return new MyHolder(view);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_fila,parent,false);
+        return new MyHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
-        Equipo equipoActual = listaEquipo.get(position);
+        Equipo equipoActual = listaEquipos.get(position);
         holder.nombre.setText(equipoActual.getNombre());
         holder.estadio.setText(equipoActual.getEstadio());
         Glide.with(context).load(equipoActual.getImagen()).placeholder(R.drawable.escudo_place).into(holder.escudo);
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 // ejecutado con la pulsacion de la fila
-                listener.onEquiposSelected(equipoActual);
+                listener.onEquipoSelected(equipoActual);
             }
         });
     }
 
-
     @Override
     public int getItemCount() {
-        return listaEquipo.size();
+        return listaEquipos.size();
     }
 
     public interface OnEquipoListener{
 
+        void onEquipoSelected(Equipo equipo);
 
-        void onEquiposSelected(Equipo equipo);
     }
 
     class MyHolder extends RecyclerView.ViewHolder{
@@ -78,12 +77,11 @@ public class AdaptadorEquipos extends RecyclerView.Adapter<AdaptadorEquipos.MyHo
 
         public MyHolder(@NonNull View itemView) {
             super(itemView);
-
             nombre = itemView.findViewById(R.id.nombre_item);
             estadio = itemView.findViewById(R.id.estadio_item);
             escudo = itemView.findViewById(R.id.imagen_item);
             linearLayout = itemView.findViewById(R.id.fila_item);
         }
-    }
 
+    }
 }

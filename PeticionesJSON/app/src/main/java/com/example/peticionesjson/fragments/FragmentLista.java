@@ -23,6 +23,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
 public class FragmentLista extends Fragment {
 
     private View view;
@@ -37,7 +38,7 @@ public class FragmentLista extends Fragment {
     }
 
     @Override
-    public void onStart (){
+    public void onStart() {
         super.onStart();
         instancias();
         asociarDatos();
@@ -45,6 +46,7 @@ public class FragmentLista extends Fragment {
     }
 
     private void realizarPeticion() {
+
         String url = "https://www.thesportsdb.com/api/v1/json/2/search_all_teams.php?s=Soccer&c=Spain";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(1, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -52,16 +54,19 @@ public class FragmentLista extends Fragment {
                 procesarPeticion(response);
             }
         }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
+            @Override
+            public void onErrorResponse(VolleyError error) {
 
-                    }
-                });
+            }
+        });
+
         Volley.newRequestQueue(getContext()).add(jsonObjectRequest);
+
+
         //adaptadorEquipos.notifyDataSetChanged();
     }
 
-    private void procesarPeticion (JSONObject response){
+    private void procesarPeticion(JSONObject response) {
         try {
             JSONArray equipos = response.getJSONArray("teams");
             for (int i = 0; i < equipos.length(); i++) {
@@ -70,19 +75,22 @@ public class FragmentLista extends Fragment {
                 String estadio = equipo.getString("strStadium");
                 String imagen = equipo.getString("strTeamBadge");
                 String id = equipo.getString("idTeam");
-                Equipo equipoActual = new Equipo(nombre, estadio, imagen, id);
+                String detalle = equipo.getString("strDescriptionEN");
+                Equipo equipoActual = new Equipo(nombre,estadio, imagen,id,detalle);
                 adaptadorEquipos.agregarEquipo(equipoActual);
+
+
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
+
     private void asociarDatos() {
-
         recyclerView.setAdapter(adaptadorEquipos);
-        recyclerView.setLayoutManager (new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
-
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
     }
 
     private void instancias() {

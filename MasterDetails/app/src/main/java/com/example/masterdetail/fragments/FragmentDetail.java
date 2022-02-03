@@ -13,7 +13,7 @@ import com.example.masterdetail.R;
 
 public class FragmentDetail extends Fragment {
 
-    private View view;´
+    private View view;
 
     @Nullable
     @Override

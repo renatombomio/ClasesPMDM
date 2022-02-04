@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Sport"
+        android:icon="@drawable/sp"
+        android:id="@+id/menu_nav_sp"
+        />
+    <item android:title="Television"
+        android:icon="@drawable/tv"
+        android:id="@+id/menu_nav_tv"
+        />
+    <item android:title="VideoGame"
+        android:icon="@drawable/vg"
+        android:id="@+id/menu_nav_vg"
+        />
+    <item android:title="Salir"
+        android:icon="@drawable/sp"
+        android:id="@+id/menu_nav_salir"
+        />
+
+</menu>

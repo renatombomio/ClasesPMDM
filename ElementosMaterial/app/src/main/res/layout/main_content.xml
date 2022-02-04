@@ -10,14 +10,12 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="10dp"
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sitio_fragment"/>
 
 
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello view"/>
 
 </LinearLayout>

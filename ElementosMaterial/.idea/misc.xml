@@ -7,8 +7,9 @@
         <entry key="app/src/main/res/layout/fragment_dos.xml" value="0.22644927536231885" />
         <entry key="app/src/main/res/layout/fragment_uno.xml" value="0.22644927536231885" />
         <entry key="app/src/main/res/layout/header_nav.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/main_content.xml" value="0.19202898550724637" />
-        <entry key="app/src/main/res/menu/menu_nav.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/main_content.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/maincontent.xml" value="0.22871376811594202" />
+        <entry key="app/src/main/res/menu/menu_nav.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu_pref.xml" value="0.25104166666666666" />
       </map>
     </option>

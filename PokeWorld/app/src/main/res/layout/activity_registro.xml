@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopoke"
+    tools:context=".pantallas.RegistroActivity"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/unite"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageview4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/pokeworld"
+        tools:ignore="VectorDrawableCompat" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Completa los Siguientes Datos"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/green"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Nombre Completo"
+        android:inputType="textPersonName"
+
+
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="12dp"
+        android:background="@color/green"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+
+    <EditText
+        android:id="@+id/txtNumero"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="12dp"
+        android:background="@color/green"
+        android:ems="10"
+        android:hint="Teléfono"
+        android:inputType="phone"
+
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtContraseña"
+        android:layout_width="330dp"
+        android:hint="contraseña"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        app:boxBackgroundColor="@color/green"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="18dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:text="Registrate"
+        android:backgroundTint="@color/gris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="¿Ya tienes una cuenta? Inicia Sesión"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+</LinearLayout>

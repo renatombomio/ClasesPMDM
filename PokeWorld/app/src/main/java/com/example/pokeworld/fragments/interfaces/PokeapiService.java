@@ -1,6 +1,6 @@
 package com.example.pokeworld.fragments.interfaces;
 
-import com.example.pokeworld.fragments.utils.PokemonRespuesta;
+import com.example.pokeworld.fragments.utilsPokemon.PokemonRespuesta;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

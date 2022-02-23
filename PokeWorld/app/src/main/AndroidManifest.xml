@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Pokeworld">
+        android:theme="@style/Theme.Pokeworld"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".pantallas.RegistroActivity"
             android:exported="true" />
@@ -18,10 +19,13 @@
             android:name=".pantallas.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".fragments.Juego"
+            android:name=".fragments.PokeGame.Juego"
             android:exported="true"/>
         <activity
-            android:name=".fragments.Pokedex"
+            android:name=".fragments.utilsPokemon.Pokedex"
+            android:exported="true"/>
+        <activity
+            android:name=".pantallas.MenuActivity"
             android:exported="true"/>
         <activity
             android:name=".MainActivity"

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".pokegame.JuegoActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondogame2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tres_en_raya"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/tituloJ"
+            />
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="290dp"
+            android:background="@drawable/tictac"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/tituloJ"
+
+            android:id="@+id/tableroJ"
+            />
+
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tableroJ"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Iniciar Juego"
+            android:backgroundTint="@color/gris"
+            android:id="@+id/btn_inicioJ"
+            />
+
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_inicioJ"
+            android:layout_centerHorizontal="true"
+            android:text="SALIR"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gris"
+            android:id="@+id/btn_salirJ"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

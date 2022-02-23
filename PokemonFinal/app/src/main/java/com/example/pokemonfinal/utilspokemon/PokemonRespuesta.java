@@ -1,10 +1,10 @@
-package com.example.pokeworld.fragments.utils;
+package com.example.pokemonfinal.utilspokemon;
 
 import java.util.ArrayList;
 
 public class PokemonRespuesta {
 
-    private ArrayList <Pokemon> results;
+    private ArrayList<Pokemon> results;
 
     public ArrayList<Pokemon> getResults() {
         return results;

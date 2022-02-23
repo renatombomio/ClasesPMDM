@@ -14,12 +14,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.pokeworld.MainActivity;
 import com.example.pokeworld.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -29,7 +31,6 @@ public class LoginActivity extends AppCompatActivity {
     private TextView labelRegistro;
 
     private FirebaseAuth mAuth;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         btnLogin.setOnClickListener(view -> {
-            userLogin();
+            usuarioLogin();
         });
 
         labelRegistro.setOnClickListener(new View.OnClickListener() {
@@ -60,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void userLogin() {
+    public void usuarioLogin() {
         String email = txtEmail.getText().toString();
         String contrasena = txtContrasena.getEditText().getText().toString();
 
@@ -86,5 +87,6 @@ public class LoginActivity extends AppCompatActivity {
 
         }
     }
+
 
 }

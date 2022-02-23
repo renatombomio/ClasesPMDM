@@ -1,9 +1,7 @@
-package com.example.pokeworld.fragments;
+package com.example.pokeworld.fragments.utilsPokemon;
 
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.pokeworld.R;
 import com.example.pokeworld.adaptador.ListaPokemonAdaptador;
 import com.example.pokeworld.fragments.interfaces.PokeapiService;
-import com.example.pokeworld.fragments.utils.Pokemon;
-import com.example.pokeworld.fragments.utils.PokemonRespuesta;
+import com.example.pokeworld.fragments.utilsPokemon.Pokemon;
+import com.example.pokeworld.fragments.utilsPokemon.PokemonRespuesta;
 
 import java.util.ArrayList;
 

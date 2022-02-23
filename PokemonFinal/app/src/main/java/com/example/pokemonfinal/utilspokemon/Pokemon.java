@@ -1,4 +1,4 @@
-package com.example.pokeworld.fragments.utils;
+package com.example.pokemonfinal.utilspokemon;
 
 public class Pokemon {
 

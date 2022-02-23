@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "218966714356",
+    "project_id": "pokemonfinal-dda21",
+    "storage_bucket": "pokemonfinal-dda21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218966714356:android:8c348ab91ca986db55fba1",
+        "android_client_info": {
+          "package_name": "com.example.pokemonfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218966714356-84p5rn3c2la4cpv83afdqq7uf3g0fulr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2jFajTNr0lsMvy5Yp4adcUQN1xdhvsg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218966714356-84p5rn3c2la4cpv83afdqq7uf3g0fulr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

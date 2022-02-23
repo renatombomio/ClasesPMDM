@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.pokeworld.R;
-import com.example.pokeworld.fragments.utils.Pokemon;
+import com.example.pokeworld.fragments.utilsPokemon.Pokemon;
 
 import java.util.ArrayList;
 

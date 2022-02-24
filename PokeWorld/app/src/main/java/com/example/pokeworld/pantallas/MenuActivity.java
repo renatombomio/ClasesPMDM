@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pokeworld.R;
+import com.example.pokeworld.fragments.PokeGame.Tictactoe;
 import com.example.pokeworld.fragments.utilsPokemon.Pokedex;
 
 public class MenuActivity extends AppCompatActivity {
@@ -33,6 +34,16 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        pokeGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent( MenuActivity.this, Tictactoe.class);
+                startActivity(i);
+            }
+        });
+
+
 
 
         salir.setOnClickListener(new View.OnClickListener() {

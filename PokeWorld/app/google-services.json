@@ -1,15 +1,45 @@
 {
   "project_info": {
     "project_number": "178349907423",
+    "firebase_url": "https://pokeworld-17508-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "pokeworld-17508",
     "storage_bucket": "pokeworld-17508.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:178349907423:android:b5360271a3ddccdfcd786a",
+        "mobilesdk_app_id": "1:178349907423:android:46e8cfa8f5d4a260cd786a",
         "android_client_info": {
           "package_name": "com.example.pokeworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178349907423-hnkrf300g8nl8p9oc966ve8kectkp8r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTXLeAzS0VDypkldAdu8dk3dpHSCAwjqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178349907423-hnkrf300g8nl8p9oc966ve8kectkp8r1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178349907423:android:8d7d2446dbbe5c7ccd786a",
+        "android_client_info": {
+          "package_name": "poke.World_2"
         }
       },
       "oauth_client": [

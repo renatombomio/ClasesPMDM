@@ -22,6 +22,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -29,14 +30,17 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputLayout txtContrasena;
     private Button btnLogin;
     private TextView labelRegistro;
-
     private FirebaseAuth mAuth;
+    private String mCustomToken;
+    FirebaseDatabase firebaseDatabase;
+
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        firebaseDatabase = FirebaseDatabase.getInstance("https://pokeworld-17508-default-rtdb.europe-west1.firebasedatabase.app/");
         txtEmail = findViewById(R.id.txt_email);
         txtContrasena = findViewById(R.id.txt_contrasena);
         labelRegistro = findViewById(R.id.label_registro);
@@ -86,7 +90,21 @@ public class LoginActivity extends AppCompatActivity {
             });
 
         }
+
     }
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        updateUI(currentUser);
+    }
+
+    private void updateUI(FirebaseUser currentUser) {
+
+    }
+
+
 
 
 }

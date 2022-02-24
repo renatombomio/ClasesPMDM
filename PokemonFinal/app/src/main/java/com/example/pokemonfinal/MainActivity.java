@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.example.pokemonfinal.pantallas.LoginActivity;
 import com.example.pokemonfinal.pantallas.MenuActivity;
 import com.example.pokemonfinal.pantallas.RegistroActivity;
+import com.example.pokemonfinal.utilspokemon.Pokedex;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( MainActivity.this, LoginActivity.class);
+                Intent i = new Intent( MainActivity.this, Pokedex.class);
                 startActivity(i);
             }
         });

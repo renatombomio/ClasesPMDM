@@ -40,7 +40,7 @@ public class ListaPokemonAdaptador extends RecyclerView.Adapter<ListaPokemonAdap
         Pokemon p = database.get(position);
         holder.nombrePokedex.setText(p.getName());
 
-        Glide.with(context).load("https://assets.pokemon.com/assets/cms2/img/pokedex/detail/00" + p.getNumber()+".png")
+        Glide.with(context).load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + p.getNumber()+".png")
                 .centerCrop().crossFade().diskCacheStrategy(DiskCacheStrategy.ALL).into(holder.imgenPokedex);
     }
 

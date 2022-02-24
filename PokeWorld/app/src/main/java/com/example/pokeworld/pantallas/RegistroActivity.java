@@ -82,17 +82,17 @@ public class RegistroActivity extends AppCompatActivity {
         String password = txtContrasena.getEditText().getText().toString();
 
         if (TextUtils.isEmpty(name)) {
-            txtCorreo.setError("Ingrese un Nombre");
-            txtCorreo.requestFocus();
+            txtUsuario.setError("Ingrese un Nombre");
+            txtUsuario.requestFocus();
         } else if (TextUtils.isEmpty(mail)) {
             txtCorreo.setError("Ingrese un Correo");
             txtCorreo.requestFocus();
         } else if (TextUtils.isEmpty(phone)) {
-            txtCorreo.setError("Ingrese un Teléfono");
-            txtCorreo.requestFocus();
+            txtNumero.setError("Ingrese un Teléfono");
+            txtNumero.requestFocus();
         } else if (TextUtils.isEmpty(password)) {
-            txtCorreo.setError("Ingrese una Contraseña");
-            txtCorreo.requestFocus();
+            txtContrasena.setError("Ingrese una Contraseña");
+            txtContrasena.requestFocus();
         } else {
 
             mAuth.createUserWithEmailAndPassword(mail, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -101,6 +101,8 @@ public class RegistroActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         usuarioID = mAuth.getCurrentUser().getUid();
                         DocumentReference documentReference = db.collection("usuarios").document(usuarioID);
+
+
 
                         Map<String, Object> user = new HashMap<>();
                         user.put("Nombre", name);

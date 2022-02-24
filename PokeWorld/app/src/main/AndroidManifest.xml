@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pokeworld">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -27,6 +28,12 @@
         <activity
             android:name=".pantallas.MenuActivity"
             android:exported="true"/>
+        <activity android:name=".fragments.PokeGame.Tictactoe"
+            android:exported="true"
+            />
+        <activity android:name=".fragments.PokeGame.Juego"
+            android:exported="true"
+            tools:ignore="DuplicateActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

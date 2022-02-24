@@ -24,6 +24,8 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
         salirJuego = (Button) findViewById(R.id.btn_salirJ);
         iniciarJuego = (Button) findViewById(R.id.btn_inicioJ);
 
+
+
         salirJuego.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +47,8 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        switch (v.getId()){
+        }
 
     }
 }

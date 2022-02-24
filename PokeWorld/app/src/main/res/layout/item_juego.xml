@@ -31,7 +31,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:id="@+id/squirtle"
-                android:text="Jugador 1"
+                android:text="@string/squirtle"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/white"
@@ -44,7 +44,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:id="@+id/meow"
-                android:text="Jugador 2"
+                android:text="@string/meow"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/white"
@@ -155,6 +155,7 @@
             android:layout_below="@id/pizarra"
             android:layout_marginTop="5dp"
             android:id="@+id/btn_iniciarJuegoJ"
+            android:onClick="iniciarj"
             />
 
         <Chronometer
@@ -190,14 +191,16 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="100dp"
-                android:background="@android:drawable/ic_media_pause" />
+                android:background="@android:drawable/ic_media_pause"
+                android:onClick="pausaj"/>
 
             <Button
                 android:id="@+id/btn_reiniciarJ"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="100dp"
-                android:background="@android:drawable/ic_menu_rotate" />
+                android:background="@android:drawable/ic_menu_rotate"
+                android:onClick="reiniciarj"/>
 
         </LinearLayout>
 

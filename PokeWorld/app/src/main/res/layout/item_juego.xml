@@ -147,16 +147,14 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/btn_iniciarJuegoJ"
             android:layout_width="220dp"
             android:layout_height="50dp"
-            android:backgroundTint="@color/gris"
-            android:text="Iniciar juego"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/pizarra"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:id="@+id/btn_iniciarJuegoJ"
-            android:onClick="iniciarj"
-            />
+            android:backgroundTint="@color/gris"
+            android:text="Iniciar juego" />
 
         <Chronometer
             android:layout_width="wrap_content"

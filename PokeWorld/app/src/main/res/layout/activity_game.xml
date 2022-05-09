@@ -35,15 +35,14 @@
             />
 
         <Button
+            android:id="@+id/btn_inicioJ"
             android:layout_width="230dp"
             android:layout_height="50dp"
             android:layout_below="@+id/tableroJ"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="Iniciar Juego"
             android:backgroundTint="@color/gris"
-            android:id="@+id/btn_inicioJ"
-            />
+            android:text="Iniciar Juego" />
 
         <Button
             android:layout_width="230dp"

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "767446712507",
+    "project_id": "animados-1bbfc",
+    "storage_bucket": "animados-1bbfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767446712507:android:990d64d7fd0949a34fe99e",
+        "android_client_info": {
+          "package_name": "com.example.animados"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767446712507-m7snfhi4nfi5f2rfji5k2mtmv1ka94sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoepGcaUXEyRebg-DLTLiw2TVw0a41UMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767446712507-m7snfhi4nfi5f2rfji5k2mtmv1ka94sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

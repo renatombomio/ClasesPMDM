@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, Juego.class);
+                Intent i = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });

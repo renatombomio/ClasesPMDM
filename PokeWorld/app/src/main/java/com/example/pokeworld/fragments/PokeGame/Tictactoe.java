@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
@@ -19,6 +20,8 @@ import com.example.pokeworld.pantallas.MenuActivity;
 
 import org.w3c.dom.Text;
 
+import java.util.zip.Inflater;
+
 public class Tictactoe extends AppCompatActivity implements View.OnClickListener {
 
     private Chronometer cronometroj;
@@ -29,32 +32,49 @@ public class Tictactoe extends AppCompatActivity implements View.OnClickListener
     int[] espacios = new int[9];
     int random;
     ImageView unoj, dosj, tresj, cuatroj, cincoj, seisj, sietej, ochoj, nuevej;
-    Button salidaj;
+    Button salidaj, btn_iniciarJ;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_juego);
+        instancias();
+        acciones();
+        iniciar();
+        pausar();
+        reiniciar();
+
+
+
+
+    }
+
+    private void acciones() {
+
+        unoj.setOnClickListener(this);
+        dosj.setOnClickListener(this);
+        tresj.setOnClickListener(this);
+        cuatroj.setOnClickListener(this);
+        cincoj.setOnClickListener(this);
+        seisj.setOnClickListener(this);
+        sietej.setOnClickListener(this);
+        ochoj.setOnClickListener(this);
+        nuevej.setOnClickListener(this);
+
+    }
+
+    private void instancias() {
 
         unoj = (ImageView) findViewById(R.id.uno);
-        unoj.setOnClickListener(this);
         dosj = (ImageView) findViewById(R.id.dos);
-        dosj.setOnClickListener(this);
         tresj = (ImageView) findViewById(R.id.tres);
-        tresj.setOnClickListener(this);
         cuatroj = (ImageView) findViewById(R.id.cuatro);
-        cuatroj.setOnClickListener(this);
         cincoj = (ImageView) findViewById(R.id.cinco);
-        cincoj.setOnClickListener(this);
         seisj = (ImageView) findViewById(R.id.seis);
-        seisj.setOnClickListener(this);
         sietej = (ImageView) findViewById(R.id.siete);
-        sietej.setOnClickListener(this);
         ochoj = (ImageView) findViewById(R.id.ocho);
-        ochoj.setOnClickListener(this);
         nuevej = (ImageView) findViewById(R.id.nueve);
-        nuevej.setOnClickListener(this);
 
         jugador1j = (TextView) findViewById(R.id.squirtle);
         jugador2j = (TextView) findViewById(R.id.meow);
@@ -64,25 +84,11 @@ public class Tictactoe extends AppCompatActivity implements View.OnClickListener
         cronometroj.setBase(SystemClock.elapsedRealtime());
 
         salidaj = (Button) findViewById(R.id.btn_salidaJ);
-        salidaj.setOnClickListener(this);
-
-
-        salidaj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Tictactoe.this, Juego.class);
-                startActivity(i);
-
-            }
-        });
+        btn_iniciarJ = findViewById(R.id.btn_iniciarJuegoJ);
 
     }
 
-
-
-
-    public void inciar(View i) {
-
+    public void iniciar() {
         if (!running) {
             cronometroj.setBase(SystemClock.elapsedRealtime() - pausaOff);
             cronometroj.start();
@@ -90,11 +96,12 @@ public class Tictactoe extends AppCompatActivity implements View.OnClickListener
             jugador2j.setText("Meow");
             running = true;
         }
-
     }
 
 
-    public void pausar(View p) {
+
+
+    public void pausar() {
         if (running) {
             cronometroj.stop();
             pausaOff = SystemClock.elapsedRealtime() - cronometroj.getBase();
@@ -102,7 +109,7 @@ public class Tictactoe extends AppCompatActivity implements View.OnClickListener
         }
     }
 
-    public void reiniciar(View r) {
+    public void reiniciar() {
 
         cronometroj.setBase(SystemClock.elapsedRealtime());
         pausaOff = 0;
@@ -203,6 +210,12 @@ public class Tictactoe extends AppCompatActivity implements View.OnClickListener
                     TurnoDeMeow();
                 }
                 break;
+            case R.id.btn_salidaJ:
+                Intent i = new Intent(Tictactoe.this, Juego.class);
+                startActivity(i);
+
+            case R.id.btn_iniciarJuegoJ:
+                Toast.makeText(this, "Iniciar juego", Toast.LENGTH_SHORT).show();
         }
     }
 

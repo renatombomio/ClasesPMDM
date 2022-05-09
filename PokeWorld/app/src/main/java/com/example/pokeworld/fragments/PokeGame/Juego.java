@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,8 +48,16 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-        }
+        switch (v.getId()) {
 
+
+            case R.id.btn_salirJ:
+                Intent i = new Intent(Juego.this, MenuActivity.class);
+                startActivity(i);
+
+            case R.id.btn_inicioJ:
+                Toast.makeText(this, "Iniciar juego", Toast.LENGTH_SHORT).show();
+
+        }
     }
 }

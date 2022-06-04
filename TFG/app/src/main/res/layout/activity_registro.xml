@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g7"
+    tools:context=".pantallas.Registro"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Este es \ntu primer \npaso con \nnosotros"
+            android:textSize="37dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/registro" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Completa los Siguientes Datos"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/txt_nombreR"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Nombre Completo"
+        android:inputType="textPersonName"
+
+
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txt_correoR"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="12dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:id="@+id/txt_numeroR"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="12dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Teléfono"
+        android:inputType="phone"
+
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_contrasenaR"
+        android:layout_width="330dp"
+        android:hint="contraseña"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:hint="Contraseña"
+            app:boxBackgroundColor="@color/white"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="18dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="Registrate"
+        android:backgroundTint="@color/rosa"
+        />
+
+    <TextView
+        android:id="@+id/lbl_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:text="¿Ya tienes una cuenta? Inicia Sesión"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+
+
+</LinearLayout>

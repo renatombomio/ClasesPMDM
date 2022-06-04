@@ -2,13 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.animados">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ANIMADOS">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".pantallas.AnadirActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pantallas.PerfilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pantallas.DetalleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pantallas.Registro"
+            android:exported="true" />
+        <activity
+            android:name=".pantallas.Login"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

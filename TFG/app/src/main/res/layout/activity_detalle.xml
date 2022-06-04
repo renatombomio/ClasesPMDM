@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".pantallas.DetalleActivity">
+
+    <ImageView
+        android:id="@+id/imgItemDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/txt_nombreDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:layout_marginTop="15dp"
+        android:hint="nombre"
+        app:layout_constraintTop_toBottomOf="@+id/imgItemDetalle"
+        tools:ignore="MissingConstraints"/>
+
+    <View
+        android:id="@+id/linea"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombreDetalle"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linea"
+        >
+
+        <EditText
+            android:id="@+id/txt_sexoDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:hint="sexo"/>
+
+
+        <EditText
+            android:id="@+id/txt_edadDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:hint="edad"/>
+
+        <EditText
+            android:id="@+id/txt_pesoDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:hint="peso"/>
+
+        <EditText
+            android:id="@+id/txt_razaDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:hint="raza"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/linea1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout1"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linea1"
+        >
+
+        <TextView
+            android:id="@+id/txtUbi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ubicación"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/txt_ubicacionDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="ubicación"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/linea2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout3"/>
+
+
+    <TextView
+        android:id="@+id/txtContactoDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linea2"
+        android:layout_marginTop="25dp"
+        android:text="Información de contacto"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/txt_numeroDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtContactoDetalle"
+        android:hint="número"/>
+
+    <EditText
+        android:id="@+id/txt_emailDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_numeroDetalle"
+        android:hint="Correo electrónico"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

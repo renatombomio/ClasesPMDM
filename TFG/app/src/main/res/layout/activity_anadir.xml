@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallas.AnadirActivity">
+
+<TextView
+    android:id="@+id/tituloAñadir"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="¡Añade tu mascota y \n espera que te contacten!"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="@color/amber"
+    tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tituloAñadir"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txtDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Datos de la mascota:"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/txt_nombreAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:hint="Nombre"/>
+        <EditText
+            android:id="@+id/txt_estadoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:hint="Estado"/>
+        <EditText
+            android:id="@+id/txt_sexoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:hint="Sexo"/>
+        <EditText
+            android:id="@+id/txt_edadAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:hint="Edad"/>
+
+        <EditText
+            android:id="@+id/txt_razaAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:hint="Raza"/>
+
+
+        <TextView
+            android:id="@+id/txtUbicacionA"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Ubicación:"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/txt_ubicacionAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:hint="ubicación"/>
+
+
+        <TextView
+            android:id="@+id/informacionAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Información de contacto:"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/txt_numeroAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:hint="número"/>
+
+        <EditText
+            android:id="@+id/txt_emailAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:hint="email"/>
+
+
+        <Button
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="añadir"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:background="@color/gris"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/amber"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:menu="@menu/bottom_menu"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

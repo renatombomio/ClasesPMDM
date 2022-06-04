@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/inicio"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item
+        android:id="@+id/añadir"
+        android:title="Añadir"
+        android:icon="@drawable/ic_add_circle"
+        />
+    <item
+        android:id="@+id/perfil"
+        android:title="Pefil"
+        android:icon="@drawable/ic_account"
+        />
+
+
+
+</menu>
